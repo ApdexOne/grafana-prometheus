@@ -1,4 +1,8 @@
 ```
+sudo docker network create monitoring
+```
+
+```
 sudo docker-compose up -d
 ```
 ```
