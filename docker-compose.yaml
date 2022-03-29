@@ -32,8 +32,8 @@ services:
     image: grafana/grafana:latest
     restart: unless-stopped
     volumes:
-      - /home/norge/Work/Projects/Laura/grafana-prometheus/prometheus-grafana/grafana/grafana.ini:/etc/grafana/grafana.ini
-      - /home/norge/Work/Projects/Laura/grafana-prometheus/prometheus-grafana/grafana/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yaml
+      - ./prometheus-grafana/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ./prometheus-grafana/grafana/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yaml
     ports:
       - 3000:3000
     links:
